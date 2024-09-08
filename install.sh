@@ -53,7 +53,7 @@ if [ -f ~/.bashrc ]; then
     mv $HOME/.bashrc $HOME/.bashrc.bk
 fi
 echo "copying .bashrc to ${HOME}/"
-cp $(pwd)/bash/.bashrc $HOME/
+cp $(pwd)/bash/minimal.bashrc $HOME/.bashrc
 
 # copy vimrc
 if [ -f ~/.vimrc ]; then
