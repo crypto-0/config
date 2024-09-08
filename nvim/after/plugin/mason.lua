@@ -1,8 +1,9 @@
-local lspconfig = require("lspconfig")
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = {"pyright","lua_ls","java_language_server","tsserver","html","cssls","cmake","jsonls","emmet_ls","bashls"}
+  ensure_installed = {"pyright","lua_ls","jdtls","ts_ls","html","cssls","cmake","jsonls","emmet_ls","clangd","yamlls",}
 })
+
+local lspconfig = require("lspconfig")
 
 require("mason-lspconfig").setup_handlers({
   function(server)

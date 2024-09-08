@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
   use {"nvim-lualine/lualine.nvim",requires = {"nvim-tree/nvim-web-devicons"}}
   use {"nvim-treesitter/nvim-treesitter",
       run = function()
-        local ts_update = require("nvim-treesitter.install").update({with_sync = true})
+        local ts_update = require("nvim-treesitter.install").update {with_sync = true }
         ts_update()
       end,
       }
@@ -39,6 +39,7 @@ return require('packer').startup(function(use)
   use {"glepnir/dashboard-nvim",requires = {"nvim-tree/nvim-web-devicons"}}
   use "voldikss/vim-floaterm"
   use "hrsh7th/cmp-cmdline"
+  use "tpope/vim-unimpaired"
 
   --
   -- Automatically set up your configuration after cloning packer.nvim
